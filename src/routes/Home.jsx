@@ -7,12 +7,17 @@ import {
   Routes
 } from "react-router-dom";
 
+import theme from '../theme.mjs';
+import { render } from '@testing-library/react';
+
 function Home(){
-    fetch("http://localhost:4000/mh").then(r => {
-        r.json().then(d => {
-            return (d)
-        })
-    })
+    return (
+        <ThemeProvider theme={theme}>
+            <Typography>
+                Hello React!
+            </Typography>
+        </ThemeProvider>
+    )
 }
 
 export default Home

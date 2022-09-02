@@ -6,9 +6,9 @@ import fsE from "fs-extra";
 import cors from "cors"
 
 //load routes
-import indexRoute from "./routes/index.js"
-import MinersHavenRoute from "./routes/mh.js"
-import BuildIslandRoute from "./routes/bi.js"
+import indexRoute from "./api/index.js"
+import MinersHavenRoute from "./api/mh.js"
+import BuildIslandRoute from "./api/bi.js"
 
 const app = express()
 
